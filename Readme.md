@@ -7,4 +7,4 @@ This project is a result of my work going through [Alex Taylor's tutorial series
 * Eclipse scrapbook for playing with chunks of blocks of code
 
 #Progress
-Just added Scrapbook, finished Lesson 3.
+Just added Scrapbook, finished Lesson 4.
