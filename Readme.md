@@ -7,4 +7,4 @@ This project is a result of my work going through [Alex Taylor's tutorial series
 * Eclipse scrapbook for playing with chunks of blocks of code
 
 #Progress
-Just wrote passing JUnit tests, finished Lesson 5.
+Just added first function by writing the failing test first (test-driven development), finished Lesson 6.

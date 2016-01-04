@@ -23,4 +23,12 @@ public class PersonTest extends TestCase {
 		assertEquals(5, testPerson.getMaximumBooks());
 	}
 
+	public void testToString(){
+		Person testPerson = new Person();
+		testPerson.setName("Jon");
+		testPerson.setMaximumBooks(7);
+		String testString = "Jon: 7 books";
+		assertEquals(testString, testPerson.toString());
+	}
+	
 }
