@@ -5,15 +5,22 @@ import junit.framework.TestCase;
 public class PersonTest extends TestCase {
 
 	public void testPerson() {
-		fail("Not yet implemented");
+		Person testPerson = new Person();
+		assertEquals("unknown name", testPerson.getName());
+		assertEquals(3, testPerson.getMaximumBooks());
 	}
 
 	public void testSetName() {
-		fail("Not yet implemented");
+		Person testPerson = new Person();
+		testPerson.setName("Fred");
+		assertEquals("Fred",testPerson.getName());
+		
 	}
 
 	public void testSetMaximumBooks() {
-		fail("Not yet implemented");
+		Person testPerson = new Person();
+		testPerson.setMaximumBooks(5);
+		assertEquals(5, testPerson.getMaximumBooks());
 	}
 
 }
