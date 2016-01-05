@@ -7,5 +7,5 @@ This project is a result of my work going through [Mark Dexter's tutorial series
 * Eclipse scrapbook for playing with chunks of blocks of code
 * Eclipse QuickFix makes it easy to write a failing test, then have Eclipse define the functions necessary for it to pass :D
 
-#Progress: 12/16
-Just wrote checkIn and checkOut methods for MyLibrary class. Finished Lesson 12.
+#Progress: 13/16
+Wrote test for getBooksForPerson method -- need it to satisfy maximumBooks requirement of checkOut method. Finished Lesson 13.

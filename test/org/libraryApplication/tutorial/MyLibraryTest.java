@@ -84,25 +84,54 @@ public class MyLibraryTest extends TestCase {
 	public void testCheckOut(){
 		//set up objects
 		setup();
-		testLibrary.addBook(book1);
-		testLibrary.addBook(book2);
-		testLibrary.addBorrower(person1);
-		testLibrary.addBorrower(person2);
+		addItems();
 		
 		//test checkOut
 		assertTrue("Unable to check out book!", testLibrary.checkOutBook(book1, person1));
-		
 		assertEquals("Jim",book1.getBorrower().getName());
-		
 		assertFalse("Book was already checked out!", testLibrary.checkOutBook(book1, person1));
 		
 		//test checkIn
 		assertTrue("Book check in failed.", testLibrary.checkIn(book1));
-		
 		assertFalse("Book was already checked in.", testLibrary.checkIn(book1));
-		
 		assertFalse("Book was never checked out.", testLibrary.checkIn(book2));
+		
+		//additional tests for maximumBooks
+		setup();
+		addItems();
+		person1.setMaximumBooks(1);
+		
+		assertTrue("First book did not check out.", testLibrary.checkOutBook(book1, person1));
+		//assertFalse("Second book should not have checked out successfully.", testLibrary.checkOutBook(book2, person1));
+		
+	}
 
+	public void testGetBooksForPerson(){
+		setup();
+		addItems();
+		
+		assertEquals(0, testLibrary.getBooksForPerson(person1).size());
+		
+		testLibrary.checkOutBook(book1, person1);
+		
+		ArrayList<Book> testBookList = testLibrary.getBooksForPerson(person1);
+		
+		assertEquals(1, testBookList.size());
+		assertEquals(0, testBookList.indexOf(book1));
+		
+		testLibrary.checkOutBook(book2, person1);
+		testBookList = testLibrary.getBooksForPerson(person1);
+		
+		assertEquals(2, testBookList.size());
+		assertEquals(1, testBookList.indexOf(book2));
+		
+	}
+
+	private void addItems() {
+		testLibrary.addBook(book1);
+		testLibrary.addBook(book2);
+		testLibrary.addBorrower(person1);
+		testLibrary.addBorrower(person2);
 	}
 	
 }

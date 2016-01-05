@@ -52,13 +52,17 @@ public class MyLibrary {
 	}
 
 	public boolean checkIn(Book book) {
-		// TODO Auto-generated method stub
 		if (book.getBorrower() != null){
 			book.setBorrower(null);
 			return true;
 		} else {
 			return false;
 		}
+	}
+
+	public ArrayList<Book> getBooksForPerson(Person person) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
