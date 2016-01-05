@@ -11,6 +11,7 @@ public class AllTests extends TestCase {
 		//$JUnit-BEGIN$
 		suite.addTestSuite(BookTest.class);
 		suite.addTestSuite(PersonTest.class);
+		suite.addTestSuite(MyLibraryTest.class);
 		//$JUnit-END$
 		return suite;
 	}
