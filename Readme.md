@@ -7,4 +7,4 @@ This project is a result of my work going through [Alex Taylor's tutorial series
 * Eclipse scrapbook for playing with chunks of blocks of code
 
 #Progress
-Just wrote a test for Book class constructor and created the class, finished Lesson 7.
+Just added the borrower property/sets/gets to book class by writing failing test first, finished Lesson 8.
