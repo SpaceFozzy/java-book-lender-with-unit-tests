@@ -81,4 +81,28 @@ public class MyLibraryTest extends TestCase {
 		
 	}
 	
+	public void testCheckOut(){
+		//set up objects
+		setup();
+		testLibrary.addBook(book1);
+		testLibrary.addBook(book2);
+		testLibrary.addBorrower(person1);
+		testLibrary.addBorrower(person2);
+		
+		//test checkOut
+		assertTrue("Unable to check out book!", testLibrary.checkOutBook(book1, person1));
+		
+		assertEquals("Jim",book1.getBorrower().getName());
+		
+		assertFalse("Book was already checked out!", testLibrary.checkOutBook(book1, person1));
+		
+		//test checkIn
+		assertTrue("Book check in failed.", testLibrary.checkIn(book1));
+		
+		assertFalse("Book was already checked in.", testLibrary.checkIn(book1));
+		
+		assertFalse("Book was never checked out.", testLibrary.checkIn(book2));
+
+	}
+	
 }

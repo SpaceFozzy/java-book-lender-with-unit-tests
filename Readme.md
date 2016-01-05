@@ -7,5 +7,5 @@ This project is a result of my work going through [Alex Taylor's tutorial series
 * Eclipse scrapbook for playing with chunks of blocks of code
 * Eclipse QuickFix makes it easy to write a failing test, then have Eclipse define the functions necessary for it to pass :D
 
-#Progress: 11/16
-Built out add/remove methods for borrowers and books in MyLibrary class by writing failing tests first. Finished Lesson 11.
+#Progress: 12/16
+Just wrote checkIn and checkOut methods for Book class. Finished Lesson 12.

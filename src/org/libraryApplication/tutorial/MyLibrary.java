@@ -41,7 +41,24 @@ public class MyLibrary {
 	public void removeBorrower(Person person) {
 		this.borrowers.remove(person);
 	}
-	
-	
+
+	public boolean checkOutBook(Book book, Person person) {
+		if (book.getBorrower()!=null){
+			return false;
+		} else {
+			book.setBorrower(person);
+			return true;
+		}
+	}
+
+	public boolean checkIn(Book book) {
+		// TODO Auto-generated method stub
+		if (book.getBorrower() != null){
+			book.setBorrower(null);
+			return true;
+		} else {
+			return false;
+		}
+	}
 
 }
