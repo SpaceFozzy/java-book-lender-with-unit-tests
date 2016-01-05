@@ -7,5 +7,5 @@ This project is a result of my work going through [Alex Taylor's tutorial series
 * Eclipse scrapbook for playing with chunks of blocks of code
 * Eclipse QuickFix makes it easy to write a failing test, then have Eclipse define the functions necessary for it to pass :D
 
-#Progress: 10/16
-Wrote a failing constructor test for myLibrary class then built the myLibrary class to make it the test pass. Learning about Java generics (cool). Finished Lesson 10.
+#Progress: 11/16
+Built out add/remove methods for borrowers and books in MyLibrary class by writing failing tests first. Finished Lesson 11.

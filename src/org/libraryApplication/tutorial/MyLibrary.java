@@ -14,4 +14,34 @@ public class MyLibrary {
 		this.borrowers = new ArrayList<Person>();
 	}
 
+	public String getName() {
+		return name;
+	}
+
+	public ArrayList<Book> getBooks() {
+		return books;
+	}
+
+	public ArrayList<Person> getBorrowers() {
+		return borrowers;
+	}
+
+	public void addBook(Book book) {
+		this.books.add(book);
+	}
+
+	public void removeBook(Book book) {
+		this.books.remove(book);
+	}
+
+	public void addBorrower(Person person) {
+		this.borrowers.add(person);
+	}
+
+	public void removeBorrower(Person person) {
+		this.borrowers.remove(person);
+	}
+	
+	
+
 }
