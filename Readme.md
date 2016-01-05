@@ -6,6 +6,7 @@ This project is a result of my work going through [Mark Dexter's tutorial series
 * Really smart refactoring for renaming variables, classes, etc
 * Eclipse scrapbook for playing with chunks of blocks of code
 * Eclipse QuickFix makes it easy to write a failing test, then have Eclipse define the functions necessary for it to pass :D
+* Extract Function makes it easy to remove duplicated code and replace it all with method calls to a single new function.
 
-#Progress: 13/16
-Wrote test for getBooksForPerson method -- need it to satisfy maximumBooks requirement of checkOut method. Finished Lesson 13.
+#Progress: 14/16
+Wrote the getBooksForPerson method and added the maximumBooks requirement of checkOut method, satisfying tests. Finished Lesson 14.

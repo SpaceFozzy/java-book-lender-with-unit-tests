@@ -102,7 +102,7 @@ public class MyLibraryTest extends TestCase {
 		person1.setMaximumBooks(1);
 		
 		assertTrue("First book did not check out.", testLibrary.checkOutBook(book1, person1));
-		//assertFalse("Second book should not have checked out successfully.", testLibrary.checkOutBook(book2, person1));
+		assertFalse("Second book should not have checked out successfully.", testLibrary.checkOutBook(book2, person1));
 		
 	}
 

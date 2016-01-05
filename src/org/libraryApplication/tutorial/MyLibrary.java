@@ -43,7 +43,9 @@ public class MyLibrary {
 	}
 
 	public boolean checkOutBook(Book book, Person person) {
-		if (book.getBorrower()!=null){
+		if (book.getBorrower()!=null 
+				|| this.getBooksForPerson(person).size() >= person.getMaximumBooks()
+		){
 			return false;
 		} else {
 			book.setBorrower(person);
@@ -61,8 +63,13 @@ public class MyLibrary {
 	}
 
 	public ArrayList<Book> getBooksForPerson(Person person) {
-		// TODO Auto-generated method stub
-		return null;
+		ArrayList<Book> result = new ArrayList<Book>();
+		for (Book thisBook : this.getBooks()) {
+			if (thisBook.getBorrower()!=null && thisBook.getBorrower().getName().equals(person.getName())) {
+				result.add(thisBook);
+			}
+		}
+		return result;
 	}
 
 }
