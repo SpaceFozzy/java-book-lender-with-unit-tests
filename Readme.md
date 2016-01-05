@@ -7,5 +7,5 @@ This project is a result of my work going through [Alex Taylor's tutorial series
 * Eclipse scrapbook for playing with chunks of blocks of code
 * Eclipse QuickFix makes it easy to write a failing test, then have Eclipse define the functions necessary for it to pass :D
 
-#Progress
-Just added the borrower property/sets/gets to book class by writing failing test first, finished Lesson 8.
+#Progress: 9/16
+Just explored the ArrayList using scrapbook, finished Lesson 9.

@@ -1,4 +1,14 @@
-Person p = new Person();
-p.setName("Jon");
-p.setMaximumBooks(20);
-p.getName();
+ArrayList<Book> list = new ArrayList<Book>();
+
+Book book1 = new Book("Great Expectations");
+Book book2 = new Book("Paradise Lost");
+
+Person person1 = new Person();
+person1.setName("Jon");
+book1.setBorrower(person1);
+book2.setBorrower(person1);
+
+list.add(book1);
+list.add(book2);list.indexOf(book2);
+list.remove(book2);
+list
