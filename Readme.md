@@ -1,5 +1,5 @@
 #A Java Book-Lending Application Project (With Tests)
-This project is a result of my work going through [Alex Taylor's tutorial series on Eclipse and Java](https://www.youtube.com/playlist?list=PLUGinutrSzN97XcdPgNUI3HB9Tjwvdl_r). While I've done lots of web development work and obj c programming, this is the first time I've fired up Eclipse and tried to make something in Java. Also my first use of Test-Driven Development.
+This project is a result of my work going through [Mark Dexter's tutorial series on Eclipse and Java](https://www.youtube.com/playlist?list=PLUGinutrSzN97XcdPgNUI3HB9Tjwvdl_r). While I've done lots of web development work and obj c programming, this is the first time I've fired up Eclipse and tried to make something in Java. Also my first use of Test-Driven Development.
 
 #Things I'm Loving About Eclipse
 * Eclipse autocomplete!
@@ -8,4 +8,4 @@ This project is a result of my work going through [Alex Taylor's tutorial series
 * Eclipse QuickFix makes it easy to write a failing test, then have Eclipse define the functions necessary for it to pass :D
 
 #Progress: 12/16
-Just wrote checkIn and checkOut methods for Book class. Finished Lesson 12.
+Just wrote checkIn and checkOut methods for MyLibrary class. Finished Lesson 12.
