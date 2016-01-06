@@ -8,5 +8,5 @@ This project is a result of my work going through [Mark Dexter's tutorial series
 * Eclipse QuickFix makes it easy to write a failing test, then have Eclipse define the functions necessary for it to pass :D
 * Extract Function makes it easy to remove duplicated code and replace it all with method calls to a single new function.
 
-#Progress: 14/16
-Wrote the getBooksForPerson method and added the maximumBooks requirement of checkOut method, satisfying tests. Finished Lesson 14.
+#Progress: 15/16
+Wrote getAvailableBooks method to satisfy testGetAvailableBooks test. Added toString methods to Book and MyLibrary class. Finished Lesson 15.

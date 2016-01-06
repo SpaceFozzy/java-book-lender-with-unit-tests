@@ -134,4 +134,47 @@ public class MyLibraryTest extends TestCase {
 		testLibrary.addBorrower(person2);
 	}
 	
+	public void testGetAvailableBooks(){
+		setup();
+		addItems();
+		ArrayList<Book> testBookList = testLibrary.getAvailableBooks();
+		
+		assertEquals(2, testBookList.size());
+		assertEquals(1, testBookList.indexOf(book2));
+		
+		testLibrary.checkOutBook(book1, person1);
+		testBookList = testLibrary.getAvailableBooks();
+		assertEquals(1, testBookList.size());
+		assertEquals(0, testBookList.indexOf(book2));
+		
+		testLibrary.checkOutBook(book2, person1);
+		testBookList = testLibrary.getAvailableBooks();
+		assertEquals(0, testBookList.size());
+		
+	}
+	
+	public void testGetUnvailableBooks(){
+		setup();
+		addItems();
+		ArrayList<Book> testBookList = testLibrary.getUnavailableBooks();
+		
+		assertEquals(0, testBookList.size());
+		
+		testLibrary.checkOutBook(book1, person1);
+		testBookList = testLibrary.getUnavailableBooks();
+		assertEquals(1, testBookList.size());
+		assertEquals(0, testBookList.indexOf(book1));
+		
+		testLibrary.checkOutBook(book2, person1);
+		testBookList = testLibrary.getUnavailableBooks();
+		assertEquals(2, testBookList.size());
+		assertEquals(1, testBookList.indexOf(book2));
+	}
+
+	public void testToString(){
+		setup();
+		addItems();
+		assertEquals("Test Library: 2 books, 2 borrowers", testLibrary.toString());
+	}
+	
 }

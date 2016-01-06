@@ -35,4 +35,16 @@ public class Book {
 		return this.borrower;
 	}
 
+	public String toString(){
+		String available;
+		
+		if (this.getBorrower()==null){
+			available = "AVAILABLE";
+		} else {
+			available = "CHECKED OUT by "+this.getBorrower().getName();
+		}
+		
+		return this.getTitle() +" by " + this.getAuthor() + ": "+available;
+	}
+	
 }

@@ -22,4 +22,14 @@ public class BookTest extends TestCase {
 		assertEquals("Jon", testName);
 	}
 	
+	public void testToString(){
+		Book testBook = new Book("War and Peace");
+		Person borrower = new Person();
+		borrower.setName("Jon"); 
+		
+		assertEquals("War and Peace by unknown author: AVAILABLE", testBook.toString());
+		testBook.setBorrower(borrower);
+		assertEquals("War and Peace by unknown author: CHECKED OUT by Jon", testBook.toString());
+	}
+	
 }
