@@ -7,7 +7,7 @@ I've completed all the lessons in this tutorial series and created a small book-
 #Things I Loved About Eclipse
 * Eclipse autocomplete!
 * Smart refactoring for renaming variables, classes, etc
-* Eclipse scrapbook for playing with chunks of blocks of code
+* Eclipse scrapbook for playing with chunks of code
 * QuickFix makes it easy to write a failing test, then have Eclipse define the functions necessary for it to pass :D
 * Extract Function makes it easy to remove duplicated code and replace it all with method calls to a single new function.
 
